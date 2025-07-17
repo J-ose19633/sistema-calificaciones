@@ -106,13 +106,23 @@ def main():
     }
 
     # 2. Crear docentes
-    docente1 = Docente("Dr. Juan Pérez", "EMP001")
-    docente2 = Docente("Ing. Ana Gómez", "EMP002")
+    docente1 = Docente("Bruno Luciano", "UTC001")
+    docente2 = Docente("Ing. Fidel Arias", "UTC002")
+    docente3 = Docente("Gilberto Garcia", "UTC003")
+    docente4 = Docente("Alatiel Gomez", "UTC004")
+    docente5 = Docente("Sindy Gasca", "UTC005")
+    docente5 = Docente("Sindy Gasca", "UTC005")
 
     # 3. Crear estudiantes
-    estudiante1 = Estudiante("Luis García", "2022001")
-    estudiante2 = Estudiante("Maria López", "2022002")
-    estudiante3 = Estudiante("Carlos Ruiz", "2022003")
+    estudiante1 = Estudiante("Luis Cruz", "UTC24007")
+    estudiante2 = Estudiante("Dori Mendez", "UTC240012")
+    estudiante3 = Estudiante("Gnesi Gomez", "UTC24005")
+    estudiante4 = Estudiante("Gadiel Muños", "UTC24008")
+    estudiante5 = Estudiante("Jassiel Perez", "UTC240014")
+    estudiante6 = Estudiante("Zuleima Martinez", "UTC240022")
+    estudiante7 = Estudiante("Joshua Miss", "UTC240018")
+    estudiante8 = Estudiante("Juan Jose Damian", "UTC240017")
+    
 
     # 4. Asignar calificaciones
     # Estudiante 1
@@ -126,19 +136,20 @@ def main():
     # Estudiante 2
     docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 5.0)
     docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 8.0)
-    docente1.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
-    docente2.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
-    docente1.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 5.5)
-    docente2.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 5.5)
+    docente6.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
 
-    # Estudiante 3 (con una calificación fuera de rango para probar la validación)
+    # Estudiante 3 
     docente1.asignar_calificacion(estudiante3, materias["calculo_integral"], 9.0)
     docente2.asignar_calificacion(estudiante3, materias["programacion_objetos"], 10.5) # Esto generará un error de validación
-    docente1.asignar_calificacion(estudiante3, materias["base_datos"], 4.0)
+    docente3.asignar_calificacion(estudiante3, materias["base_datos"], 4.0)
 
 
     # 5. Generar el reporte final para todos los estudiantes
-    generar_reporte_final([estudiante1, estudiante2, estudiante3])
+    generar_reporte_final([estudiante1, estudiante2, estudiante3, estudiante4, estudiante5, eestudiante6, estudiante7, estudiante8])
 
 if __name__ == "__main__":
     main()
+
