@@ -127,11 +127,11 @@ def main():
     # 4. Asignar calificaciones
     # Estudiante 1
     docente1.asignar_calificacion(estudiante1, materias["calculo_integral"], 8.5)
-    docente1.asignar_calificacion(estudiante1, materias["programacion_objetos"], 9.0)
-    docente2.asignar_calificacion(estudiante1, materias["base_datos"], 7.2)
-    docente1.asignar_calificacion(estudiante1, materias["desarrollo_pensamiento"], 6.0)
-    docente2.asignar_calificacion(estudiante1, materias["proyecto_integrador"], 9.5)
-    docente1.asignar_calificacion(estudiante1, materias["topicos_calidad"], 7.8)
+    docente2.asignar_calificacion(estudiante1, materias["programacion_objetos"], 9.0)
+    docente3.asignar_calificacion(estudiante1, materias["base_datos"], 7.2)
+    docente4.asignar_calificacion(estudiante1, materias["desarrollo_pensamiento"], 6.0)
+    docente5.asignar_calificacion(estudiante1, materias["proyecto_integrador"], 9.5)
+    docente5.asignar_calificacion(estudiante1, materias["topicos_calidad"], 7.8)
 
     # Estudiante 2
     docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 5.0)
@@ -139,13 +139,56 @@ def main():
     docente3.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
     docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
     docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 5.5)
-    docente6.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
 
-    # Estudiante 3 
-    docente1.asignar_calificacion(estudiante3, materias["calculo_integral"], 9.0)
-    docente2.asignar_calificacion(estudiante3, materias["programacion_objetos"], 10.5) # Esto generará un error de validación
-    docente3.asignar_calificacion(estudiante3, materias["base_datos"], 4.0)
+    # Estudiante 3
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 7.0)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 8.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 8.5)
+    docente6.asignar_calificacion(estudiante2, materias["topicos_calidad"], 8.0)
 
+    # Estudiante 4
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 8.0)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 8.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 9.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 6.5)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 7.0)
+
+    # Estudiante 5
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 5.0)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 8.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 6.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 5.5)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
+
+    # Estudiante 6
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 6.5)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 7.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 8.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 5.5)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 6.0)
+
+    # Estudiante 7
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 9.0)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 8.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 8.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 7.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 9.5)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 7.0)
+
+    # Estudiante 8
+    docente1.asignar_calificacion(estudiante2, materias["calculo_integral"], 6.0)
+    docente2.asignar_calificacion(estudiante2, materias["programacion_objetos"], 9.0)
+    docente3.asignar_calificacion(estudiante2, materias["base_datos"], 9.5)
+    docente4.asignar_calificacion(estudiante2, materias["desarrollo_pensamiento"], 8.0)
+    docente5.asignar_calificacion(estudiante2, materias["proyecto_integrador"], 8.5)
+    docente5.asignar_calificacion(estudiante2, materias["topicos_calidad"], 8.0)
+   
 
     # 5. Generar el reporte final para todos los estudiantes
     generar_reporte_final([estudiante1, estudiante2, estudiante3, estudiante4, estudiante5, eestudiante6, estudiante7, estudiante8])
